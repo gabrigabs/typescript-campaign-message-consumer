@@ -28,6 +28,8 @@
   },
   "dependencies": {
     "@paralleldrive/cuid2": "^2.2.2",
+    "@types/amqplib": "^0.10.7",
+    "amqplib": "^0.10.5",
     "dotenv": "^16.4.7",
     "mongo": "^0.1.0",
     "mongoose": "^8.11.0",
