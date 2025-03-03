@@ -5,9 +5,7 @@ dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
 export default {
   mongodb: {
-    uri:
-      process.env.MONGODB_URI ||
-      'mongodb://root:root@localhost:27017/campaigns',
+    uri: process.env.MONGODB_URL || 'mongodb://localhost:27017/campaigns',
     dbName: process.env.MONGODB_DB_NAME || 'campaigns',
   },
   rabbitmq: {

@@ -1,7 +1,7 @@
-import config from './config';
+import mongodb from './db/mongodb';
 
-function main(): void {
-  console.log(config);
+async function main(): Promise<void> {
+  await mongodb.connect();
 }
 
 main();
