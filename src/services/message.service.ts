@@ -13,7 +13,9 @@ class MessageService {
 
       await messageRepository.saveMessage(messageData);
 
-      await campaignRepository.updateCampaignStatus(messageData.campaign_id);
+      if (messageData.is_last_message) {
+        await campaignRepository.updateCampaignStatus(messageData.campaign_id);
+      }
 
       logger.info('Message created successfully', {
         campaign_id: messageData.campaign_id,
