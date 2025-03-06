@@ -27,7 +27,7 @@ Você deve configurar as variáveis de ambiente com os mesmos valores usados na 
 
 ```bash
 # MongoDB
-MONGODB_URI=mongodb://root:root@localhost:27017/messages
+MONGODB_URI=mongodb://root:root@localhost:27017/messages?authSource=admin
 MONGODB_DB_NAME=messages
 
 # RabbitMQ
